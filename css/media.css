@@ -1,4 +1,4 @@
-@media (min-width: 576px) {
+@media (max-width: 900px) {
   .bg-sm-white {
     background-color: white !important;
     padding-block: 1rem;
