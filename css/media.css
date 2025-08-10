@@ -1,0 +1,20 @@
+@media (min-width: 576px) {
+  .bg-sm-white {
+    background-color: white !important;
+    padding-block: 1rem;
+  }
+  .navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show ,.nav-link {
+  color: black !important;
+  margin-block: 1rem;
+}
+.navbar-nav .nav-link::before {
+  background-color: black;
+}
+#navbar.white-bg .navbar-toggler i{
+color: black !important;
+}
+main header::before {
+    background-attachment: fixed;
+  }
+}
