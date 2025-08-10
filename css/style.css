@@ -1,0 +1,467 @@
+body {
+  font-family: "Poppins", sans-serif;
+  color: #343434;
+  font-weight: 400;
+}
+
+.bg-gray {
+  background-color: #f7f7f7;
+}
+
+p {
+  line-height: 1.6;
+  margin: 0;
+  font-size: 15px;
+  color: #748182;
+}
+
+h6,
+h4,
+h5 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.maxWidth {
+  max-width: 250px;
+}
+
+nav.navbar .navbar-brand.logo {
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: white;
+}
+.navbar-nav .nav-link {
+  position: relative; 
+  display: inline-block; 
+}
+
+#navbar {
+  .nav-link {
+    color: white;
+  }
+
+  .nav-link:hover {
+    color: unset;
+  }
+}
+.navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link.active::before,
+.navbar-nav .nav-link:hover::before {
+  width: 100%;
+}
+
+
+#navbar {
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+#navbar.white-bg {
+  background-color: white;
+  padding: 0 !important;
+}
+
+#navbar.white-bg a {
+  color: black !important;
+}
+
+#navbar.white-bg .navbar-nav .nav-link.active::before {
+  background-color: black;
+}
+
+main header {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.655), rgba(0, 0, 0, 0.655)), url(../imgs/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main header .header-content .content h2 {
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+main header .header-content .content h1 {
+  font-weight: 200;
+  font-size: 4rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+main header .header-content .content h1 span.animation {
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+main header .header-content .content ul i {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main #about .row .hero-img {
+  position: relative;
+  z-index: 0;
+}
+
+main #about .row .hero-img::after {
+  position: absolute;
+  content: "";
+  width: 80%;
+  height: 80%;
+  bottom: -30px;
+  left: -30px;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  z-index: -1;
+}
+
+main #about .row .content p.text-uppercase {
+  color: #999;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+main #about .row .content .progress {
+  height: 1.5rem;
+}
+
+main #about .row .content .progress-bar {
+  background-color: black;
+}
+
+main #about .row .content button {
+  font-size: 13px;
+  transition: all 1s;
+}
+
+main #about .row .content button.btn1:hover {
+  background-color: transparent !important;
+  color: black !important;
+}
+
+main #about .row .content button.btn2:hover {
+  background-color: black !important;
+  color: white !important;
+}
+
+#service .title h1,
+#work .title h1,
+#client .title h1,
+#team .title h1,
+#contact .title h1 {
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  z-index: 4;
+  display: inline-block;
+}
+
+#service .title h1:after,
+#work .title h1:after,
+#client .title h1:after,
+#team .title h1:after,
+#contact .title h1:after {
+  content: "";
+  width: 100%;
+  height: 30px;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  z-index: -1;
+}
+
+#service .box-service span {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  background-color: #f4f4f4;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  transition: all 1s;
+}
+
+#service .box-service h6 {
+  font-weight: 800;
+  font-size: 18px;
+}
+
+#service .box-service p {
+  word-spacing: 2px;
+  font-size: 14px;
+}
+
+#service .box-service:hover span {
+  background-color: black;
+  color: white;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  color: black;
+  background-color: unset;
+  position: relative;
+}
+
+.nav-pills .nav-link.active::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+}
+
+#work {
+  .nav-link {
+    color: #222;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 0;
+    margin-inline: 1rem;
+  }
+
+  .nav-link:hover {
+    color: black !important;
+  }
+
+
+
+  .content .overlay {
+    background-color: rgba(255, 255, 255, 0.899);
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 1s;
+  }
+
+  .content:hover .overlay,
+  .content:hover .overlay h6 {
+    visibility: visible;
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .content .overlay h6 {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+    transform: translateY(-15px);
+    transition: all 0.5s;
+    opacity: 0;
+  }
+
+  .content .overlay i {
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 10px;
+    border: 1px solid black;
+    transition: all 1s;
+  }
+
+  .content .overlay i:hover {
+    background-color: transparent;
+    color: black;
+  }
+
+  .tab-pane .content {
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+  }
+
+  .tab-pane.active.show .content {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+#client {
+  .owl-carousel .owl-item img {
+    width: 100px;
+  }
+
+  .owl-dots {
+    text-align: center;
+  }
+
+  .owl-carousel button.owl-dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #d6d6d6;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .owl-carousel button.owl-dot.active {
+    background-color: #869791;
+  }
+
+  .content .content-p {
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 30px;
+  }
+}
+
+#counter {
+  .content h2 {
+    font-weight: 900;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  p {
+    font-weight: 600;
+  }
+}
+
+#team {
+  .card {
+    background-color: rgba(52, 52, 52, 0.8);
+    border: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+
+    picture {
+      overflow: hidden;
+      position: relative;
+
+      img {
+        transition: all 1s;
+      }
+    }
+
+    picture:hover img {
+      transform: scale(1.2);
+    }
+
+    .overlay {
+      position: absolute;
+      top: 5px;
+      bottom: 5px;
+      left: 5px;
+      right: 5px;
+      visibility: hidden;
+      opacity: 0;
+      transform: rotateY(180deg) scale(0.5, 0.5);
+      transition: all 1s;
+
+      i {
+        height: 50px;
+        width: 50px;
+        background-color: black;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border: 1px solid black;
+        transition: all 1s;
+      }
+    }
+
+    .overlay i:hover {
+      background-color: transparent;
+      color: black;
+    }
+  }
+
+  .card:hover .overlay {
+    visibility: visible;
+    opacity: 1;
+    transform: rotateY(0deg) scale(1, 1);
+  }
+}
+
+#contact {
+  .content {
+    text-align: center;
+
+    i {
+      display: flex;
+      width: 50px;
+      height: 50px;
+      background-color: #f4f4f4;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      transition: all 1s;
+      margin-inline: auto;
+    }
+  }
+
+  .content:hover i {
+    background-color: black;
+    color: white;
+  }
+
+  form input,
+  form textarea {
+    background-color: #f4f4f4;
+  }
+
+  form textarea {
+    height: 160px;
+  }
+
+  form input:focus,
+  form textarea:focus {
+    outline: none;
+    border: 2px solid #0b0603;
+    box-shadow: 0 0 5px rgba(18, 8, 1, 0.5);
+    background-color: #fff;
+  }
+
+  form button {
+    font-size: 15px;
+    transition: all 1s;
+  }
+
+  form button:hover {
+    background-color: transparent !important;
+    color: black !important;
+  }
+
+
+}
