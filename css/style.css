@@ -47,7 +47,7 @@ nav.navbar .navbar-brand.logo {
   }
 
   .nav-link:hover {
-    color: unset;
+    color: white;
   }
 }
 .navbar-nav .nav-link::before {
