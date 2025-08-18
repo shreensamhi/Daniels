@@ -42,10 +42,10 @@ $(document).ready(function(){
  const portfolioModal = document.getElementById('portfolioModal');
   portfolioModal.addEventListener('show.bs.modal', function (event) {
     let button = event.relatedTarget; 
-    let index = button.getAttribute('data-index'); // which image clicked
+    let index = button.getAttribute('data-index'); 
     let carousel = bootstrap.Carousel.getInstance(document.getElementById('portfolioCarousel'));
     if (!carousel) {
       carousel = new bootstrap.Carousel(document.getElementById('portfolioCarousel'));
     }
-    carousel.to(index); // jump to that image
+    carousel.to(index); 
   });
