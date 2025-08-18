@@ -61,8 +61,7 @@ nav.navbar .navbar-brand.logo {
   transition: width 0.3s ease;
 }
 
-.navbar-nav .nav-link.active::before,
-.navbar-nav .nav-link:hover::before {
+.navbar-nav .nav-link.active::before{
   width: 100%;
 }
 
